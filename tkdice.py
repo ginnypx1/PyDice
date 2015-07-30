@@ -1,13 +1,13 @@
 from tkinter import *
 import random
 
-class PyDice(Frame):
-	def __init__(self, parent=None):
-		"creates an app to throw a specified number of dice"
-		Frame.__init__(self, parent)
-		#Frame.title('PyDice')
 
-		# create heading
+class PyDice(Frame):
+	"creates an app to throw a specified number of dice"
+	def __init__(self, parent=None):
+		Frame.__init__(self, parent)
+
+		# create game directions
 		lab = Label(self, text="Throw the dice!", width = 20, height=3)
 		lab.pack(side=TOP, fill=BOTH)
 
@@ -44,6 +44,7 @@ class PyDice(Frame):
 
 if __name__ == '__main__':
 	root = Tk()
+	root.title('PyDice')
 	pd = PyDice(root)
 	pd.pack(side=TOP)
 	root.mainloop()
