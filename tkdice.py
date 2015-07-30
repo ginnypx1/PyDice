@@ -1,43 +1,60 @@
 from tkinter import *
 import random
 
-root = Tk()
-root.title('PyDice')
+class PyDice(Frame):
+	def __init__(self, parent=None):
+		"creates an app to throw a specified number of dice"
+		Frame.__init__(self, parent)
+		#Frame.title('PyDice')
 
-# create heading
-lab = Label(text="Throw the dice!", width = 20, height=3)
-lab.pack(side=TOP, fill=BOTH)
+		# create heading
+		lab = Label(self, text="Throw the dice!", width = 20, height=3)
+		lab.pack(side=TOP, fill=BOTH)
 
-# create an entry form for number of dice
-form = Frame(root)
-form.pack(side=LEFT, fill=X)
+		# create an entry form for number of dice
+		form = Frame(self)
+		form.pack(side=LEFT, fill=X)
 
-ent_lab = Label(form, text="How many dice?", width=15)
-ent_lab.pack(side=LEFT)
+		ent_lab = Label(form, text="How many dice?", width=15)
+		ent_lab.pack(side=LEFT)
 
-ent = Entry(form)
-var = IntVar()
-ent.config(textvariable=var)
-ent.pack(side=LEFT)
+		ent = Entry(form)
+		var = IntVar()
+		ent.config(textvariable=var)
+		ent.pack(side=LEFT)
 
-# FUNCTIONS TO ROLL DICE
-def roll():
-	return random.randint(1, 6)
+		# create a button that executes a roll
+		but = Button(self, text="Roll", width=5, height=3, command=lambda: self.toss(var.get()))
+		but.pack(side=RIGHT, fill=X, expand=YES)
 
-def toss():
-	# returns the results of dice throw
-	results = []
-	num = var.get()
-	for i in range(0, num):
-		results.append(roll())
-	# creates a pop up to display results
-	popup = Toplevel()
-	labl = Label(popup, text=results, width=20, height=10)
-	labl.pack(expand=YES, fill=BOTH)
+	# FUNCTIONS TO ROLL DICE
+	def roll(self):
+		"rolls a single dice"
+		return random.randint(1, 6)
 
-# create a button that executes a roll
-but = Button(root, text="Roll", width=5, height=3, command=toss)
-but.pack(side=RIGHT, fill=X, expand=YES)
+	def toss(self, num):
+		"returns the results dice throw"
+		results = []
+		for i in range(0, num):
+			results.append(self.roll())
+		# creates a label to display results
+		popup = Toplevel()
+		labl = Label(popup, text=results, width=20, height=10)
+		labl.pack(side=TOP, expand=YES, fill=BOTH)
+
+if __name__ == '__main__':
+	root = Tk()
+	pd = PyDice(root)
+	pd.pack(side=TOP)
+	root.mainloop()
 
 
-root.mainloop()
+
+
+
+
+
+
+
+
+
