@@ -1,6 +1,5 @@
 import random
 
-
 def roll():
 	'Rolls one die'
 	dice = random.randint(1, 6)
