@@ -1,3 +1,4 @@
+from quitter import Quitter
 from tkinter import *
 import random
 
@@ -11,9 +12,14 @@ class PyDice(Frame):
 		lab = Label(self, text="Throw the dice!", width = 20, height=3)
 		lab.pack(side=TOP, fill=BOTH)
 
+		# create a frame for dice throw
+		res = Label(self, width=20, height=10)
+		res.config(text='hi')
+		res.pack(side=TOP)
+
 		# create an entry form for number of dice
 		form = Frame(self)
-		form.pack(side=LEFT, fill=X)
+		form.pack(side=TOP, fill=X)
 
 		ent_lab = Label(form, text="How many dice?", width=15)
 		ent_lab.pack(side=LEFT)
@@ -24,23 +30,25 @@ class PyDice(Frame):
 		ent.pack(side=LEFT)
 
 		# create a button that executes a roll
-		but = Button(self, text="Roll", width=5, height=3, command=lambda: self.toss(var.get()))
+		but = Button(form, text="Roll", width=5, height=3, command=lambda: self.toss(var.get(), res))
 		but.pack(side=RIGHT, fill=X, expand=YES)
+
+		# create a button that quits program
+		quit = Quitter(self)
+		quit.pack(side=TOP, fill=X, expand=YES)
 
 	# FUNCTIONS TO ROLL DICE
 	def roll(self):
 		"rolls a single dice"
 		return random.randint(1, 6)
 
-	def toss(self, num):
+	def toss(self, num, tag):
 		"returns the results dice throw"
 		results = []
 		for i in range(0, num):
 			results.append(self.roll())
-		# creates a label to display results
-		popup = Toplevel()
-		labl = Label(popup, text=results, width=20, height=10)
-		labl.pack(side=TOP, expand=YES, fill=BOTH)
+		# changes text of results Label to display results
+		tag.config(text=results)
 
 if __name__ == '__main__':
 	root = Tk()
