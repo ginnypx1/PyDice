@@ -1,9 +1,11 @@
 import random
 
+
 def roll():
 	'Rolls one die'
 	dice = random.randint(1, 6)
 	return dice
+
 
 def throw():
 	'Throws a specificed amount of die'
@@ -19,4 +21,4 @@ def throw():
 	for each in total:
 		print(each, end=' ')
 
-throw()
+throw

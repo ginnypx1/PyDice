@@ -10,17 +10,24 @@ class DiceWin(Frame):
 		Frame.__init__(self, parent)
 
 		# game variables
-		self.dice_images = ['img/face-1.png', 'img/face-2.png', 'img/face-3.png', 'img/face-4.png', 'img/dice-5.png', 'img/face-6.png']
+		self.dice_images = ['img/face-1.png',
+							'img/face-2.png',
+							'img/face-3.png',
+							'img/face-4.png',
+							'img/dice-5.png',
+							'img/face-6.png']
 
 		# creates initial game image
 		start_lab = PIL.Image.open('img/start-face.png')
 		start_load = PIL.ImageTk.PhotoImage(start_lab)
 		start_img = Label(self, image=start_load)
 		start_img.image = start_load
-		start_img.pack(side=TOP)
+		start_img.pack(side=TOP, fill=BOTH)
 
 		# creates button to roll dice
-		but = Button(self, text='Roll!', command=(lambda: self.show_image(start_img))).pack()
+		but = Button(self, text='Roll!')
+		but.config(command=(lambda: self.show_image(start_img)))
+		but.pack(fill=X)
 
 	def roll_dice(self):
 		"simulates a dice roll"
@@ -44,3 +51,4 @@ if __name__ == '__main__':
 	dw = DiceWin(root)
 	dw.pack()
 	root.mainloop()
+	

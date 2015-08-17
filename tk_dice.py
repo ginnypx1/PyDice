@@ -1,6 +1,6 @@
+import random
 from quitter import Quitter
 from tkinter import *
-import random
 
 
 class PyDice(Frame):
@@ -9,7 +9,7 @@ class PyDice(Frame):
 		Frame.__init__(self, parent)
 
 		# create game directions
-		lab = Label(self, text="Throw the dice!", width = 20, height=3)
+		lab = Label(self, text="Throw the dice!", width=20, height=3)
 		lab.pack(side=TOP, fill=BOTH)
 
 		# create a frame for dice throw
@@ -30,7 +30,8 @@ class PyDice(Frame):
 		ent.pack(side=LEFT)
 
 		# create a button that executes a roll
-		but = Button(form, text="Roll", width=5, height=3, command=lambda: self.toss(var.get(), res))
+		but = Button(form, text="Roll", width=5, height=3)
+		but.config(command=(lambda: self.toss(var.get(), res)))
 		but.pack(side=RIGHT, fill=X, expand=YES)
 
 		# create a button that quits program
@@ -50,20 +51,11 @@ class PyDice(Frame):
 		# changes text of results Label to display results
 		tag.config(text=results)
 
+
 if __name__ == '__main__':
 	root = Tk()
 	root.title('PyDice')
 	pd = PyDice(root)
 	pd.pack(side=TOP)
 	root.mainloop()
-
-
-
-
-
-
-
-
-
-
-
+	
