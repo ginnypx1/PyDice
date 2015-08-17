@@ -5,7 +5,7 @@ import random
 
 
 class DiceWin(Frame):
-	"""Creates a window that throws a single die when button is pressed"""
+	"creates an app to throw a dice"
 	def __init__(self, parent=None):
 		Frame.__init__(self, parent)
 
@@ -23,13 +23,14 @@ class DiceWin(Frame):
 		but = Button(self, text='Roll!', command=(lambda: self.show_image(start_img))).pack()
 
 	def roll_dice(self):
-		"simulates a dice roll"
+		"rolls the dice"
 		return random.randint(0, 5)
 
 	def show_image(self, img_tag): 
 		"rolls the dice and changes the picture to the new roll"
 		num = self.roll_dice()
 		pic = self.dice_images[num]
+		print(num)
 		# changes the picture to new dice roll	
 		load = PIL.Image.open(pic)
 		render = PIL.ImageTk.PhotoImage(load)
