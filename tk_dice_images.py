@@ -10,15 +10,15 @@ class DiceWin(Frame):
 		Frame.__init__(self, parent)
 
 		# game variables
-		self.dice_images = ['img/face-1.png',
-							'img/face-2.png',
-							'img/face-3.png',
-							'img/face-4.png',
-							'img/dice-5.png',
-							'img/face-6.png']
+		self.dice_images = ['img/Dice1.png',
+							'img/Dice2.png',
+							'img/Dice3.png',
+							'img/Dice4.png',
+							'img/Dice5.png',
+							'img/Dice6.png']
 
 		# creates initial game image
-		start_lab = PIL.Image.open('img/start-face.png')
+		start_lab = PIL.Image.open('img/RollDice.png')
 		start_load = PIL.ImageTk.PhotoImage(start_lab)
 		start_img = Label(self, image=start_load)
 		start_img.image = start_load
