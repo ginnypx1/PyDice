@@ -1,7 +1,8 @@
 import PIL.Image
 import PIL.ImageTk
-from tkinter import *
 import random
+
+from tkinter import *
 
 
 class DiceWin(Frame):
