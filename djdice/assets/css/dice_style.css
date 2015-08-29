@@ -1,0 +1,103 @@
+/********************************
+STANDARD PAGE RULES
+*********************************/
+* {
+	margin:0;
+	padding:0;
+} 
+html,
+body {
+	height: 100%;
+	text-align: center;
+}
+/*******************************
+BOX SIZING
+*******************************/
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;   
+    box-sizing: border-box;   /* Everything else */
+}
+/*******************************
+FONTS
+*******************************/
+html {
+	font-family: Verdana, sans-serif;
+	font-size: 16px;
+}
+a,
+h2,
+button {
+	font-size: 1em;
+}
+h1 {
+	font-size: 3em;
+}
+/********************************
+ COLORS
+*********************************/
+a,
+p {
+	color: #e6005c; /* hot pink */
+}
+h1 {
+	color: #ff7519; /* orange */
+}
+h2,
+button {
+	color: #00cc00; /* lime green */
+}
+button {
+	background-color: white;
+}
+/********************************
+ LINK PROPERTIES
+*********************************/
+a:link, 
+a:visited {
+	text-decoration:none;
+	border: none;
+	}
+ 
+a:hover, 
+a:active {
+	color: #00ffff; /* teal */
+	}
+/*******************************
+PADDING
+*******************************/
+h1, 
+h2, 
+a,
+p {
+	padding: 20px;
+}
+img {
+	padding: 10px;
+}
+#start-button {
+	padding: 10px;
+}
+button {
+	padding: 5px;
+	width: 150px;
+	margin: 0 10px;
+}
+/*******************************
+SIZING
+*******************************/
+#start-button {
+	width: 200px;
+	margin: 0 auto;
+}
+#dice_go_here {
+	margin: 0 auto;
+}
+/*******************************
+BORDERS
+*******************************/
+#start-button,
+button {
+	border: 2px solid gray;
+	border-radius: 30px;
+}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+
+{% block title %}Roll the PyDice{% endblock %}
+
+{% block content %}
+<div id="dice_go_here">
+	<script>
+		var IMG_FILE1 = "{% static 'img/Dice1.jpg' %}"
+		var IMG_FILE2 = "{% static 'img/Dice2.jpg' %}"
+		var IMG_FILE3 = "{% static 'img/Dice3.jpg' %}"
+		var IMG_FILE4 = "{% static 'img/Dice4.jpg' %}"
+		var IMG_FILE5 = "{% static 'img/Dice5.jpg' %}"
+		var IMG_FILE6 = "{% static 'img/Dice6.jpg' %}"
+	</script>
+	<img id="pic_die" src="{% static 'img/RollDice.jpg' %}" height="150" width="150" alt="picture of a die" />
+</div>
+
+<button>Roll the Dice</button>
+{% endblock %}

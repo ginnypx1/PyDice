@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+
+{% block title %}PyDice{% endblock %}
+
+{% block content %}
+<h1>PyDice!</h1>
+
+<img src="{% static 'img/RollDice.jpg' %}" height="150" width="150" alt="picture of a die" />
+
+<h2>Are you ready to shake it up?</h2>
+
+<div id="start-button">
+	<a href="{% url 'dicegame:play' %}">Roll the Dice!</a>
+</div>
+{% endblock %}
