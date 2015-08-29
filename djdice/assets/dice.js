@@ -11,7 +11,7 @@ var diceImages = [
 //2. change the image every time roll_dice is pressed
 $("button").click(function() {
 	// get a random number 1-6
-	var num = Math.floor(Math.random() * 6) + 1;
+	var num = Math.floor(Math.random() * 6);
 	// get the corresponding image from diceImages
 	var roll = diceImages[num];
 	// replace #pic_die image with that image
