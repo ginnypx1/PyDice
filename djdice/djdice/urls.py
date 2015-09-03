@@ -22,7 +22,7 @@ from . import views
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', views.index),
-    url(r'^dice/', include('dice.urls', namespace='dicegame'))
+    url(r'^dice/', include('dice.urls', namespace='dicegame')),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
