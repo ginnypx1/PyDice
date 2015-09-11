@@ -1,8 +1,5 @@
 from flask import Flask
 from flask import render_template
-import random
-
-from options import dice_pics
 
 app = Flask(__name__)
 
