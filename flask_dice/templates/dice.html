@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}PyDice{% endblock %}
+
+{% block header %}
+<h1>PyDice!</h1>
+<p>Are you ready to shake it up?</p>
+{% endblock %}
+
+{% block content %}
+<div id="dice_go_here">
+	<img id="pic_die" src="{{ url_for('static', filename='img/RollDice.jpg') }}" height="150" width="150" alt="picture of a die" />
+</div>
+
+<button>Roll the Dice!</button>
+{% endblock %}

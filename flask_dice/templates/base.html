@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>{% block title %}{% endblock %}</title>
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='dice_style.css') }}" >
+	<link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<header>
+		{% block header %}{% endblock %}
+	</header>
+
+	{% block content %}
+	{% endblock %}
+	<script src="{{ url_for('static', filename='dice.js') }}" type="text/javascript"></script>
+</body>
+
+</html>
