@@ -5,14 +5,10 @@
 		background-color: purple;
 	}*/
 	h1 {
-		font-size: 3em;
+		font-size: 4em;
 	}
 	button {
 		margin-left: 50px;
-	}
-	.directions,
-	.diceroll {
-		min-height: 500px;
 	}
 }
 
@@ -21,15 +17,8 @@
 	/*body {
 		background-color: red;
 	}*/
-	h1 {
-		font-size: 4em;
-	}
 	button {
 		margin-left: 100px;
-	}
-	.directions,
-	.diceroll {
-		min-height: 550px;
 	}
 
 }
