@@ -36,7 +36,7 @@ ul li {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
-    position: fixed;
+    position: relative;
     display: inline-block;
     background: url('../img/RollDice.jpg');
     background-repeat: no-repeat;
