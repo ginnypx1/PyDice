@@ -37,6 +37,7 @@ ul li {
     white-space: nowrap;
     overflow: hidden;
     position: fixed;
+    display: inline-block;
     background: url('../img/RollDice.jpg');
     background-repeat: no-repeat;
     background-size: 45px;
