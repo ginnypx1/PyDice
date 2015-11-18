@@ -36,10 +36,11 @@ ul li {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
+    position: fixed;
     background: url('../img/RollDice.jpg');
     background-repeat: no-repeat;
-    background-size: 50px;
-    margin: 5px 0px 0px 5px;
+    background-size: 45px;
+    margin: 3px 0px 0px 3px;
 }
 /*FONTS___________________*/
 body {
