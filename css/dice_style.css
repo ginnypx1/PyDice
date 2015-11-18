@@ -2,6 +2,9 @@
 html {
     font-size: 16px;
 }
+html, body {
+    overflow-x: hidden;
+}
 button {
     -webkit-appearance: none;
     border-radius: 0;
@@ -36,7 +39,7 @@ ul li {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
-    position: relative;
+    position: fixed;
     display: inline-block;
     background: url('../img/RollDice.jpg');
     background-repeat: no-repeat;
