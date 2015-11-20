@@ -12,7 +12,10 @@
 	}
 	.directions,
 	.diceroll {
-		min-height: 350px;
+		min-height: 500px;
+	}
+	button {
+		font-size: 0.75em;
 	}
 }
 
@@ -29,7 +32,10 @@
 	}
 	.directions,
 	.diceroll {
-		min-height: 350px;
+		min-height: 500px;
+	}
+	button {
+		font-size: 0.75em;
 	}
 }
 
