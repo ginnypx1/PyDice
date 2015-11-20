@@ -10,6 +10,10 @@
 	h1 {
 		font-size: 3em;
 	}
+	.directions,
+	.diceroll {
+		min-height: 350px;
+	}
 }
 
 /*iPHONES6 to GALAXY*/
@@ -22,6 +26,10 @@
 	}
 	h1 {
 		font-size: 3em;
+	}
+	.directions,
+	.diceroll {
+		min-height: 350px;
 	}
 }
 
