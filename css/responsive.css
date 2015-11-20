@@ -10,10 +10,6 @@
 	h1 {
 		font-size: 3em;
 	}
-	.directions,
-	.diceroll {
-		min-height: 500px;
-	}
 	button {
 		font-size: 0.75em;
 	}
@@ -30,10 +26,6 @@
 	h1 {
 		font-size: 3em;
 	}
-	.directions,
-	.diceroll {
-		min-height: 500px;
-	}
 	button {
 		font-size: 0.75em;
 	}
@@ -44,10 +36,6 @@
 	/*body {
 		background-color: yellow;
 	}*/
-	.diceroll,
-	.directions {
-		min-height: 750px;
-	}
 }
 
 /*PRINT*/
