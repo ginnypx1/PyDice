@@ -9,3 +9,5 @@ This is a simple dice throwing simulation for Python in several versions:
   - djdice runs a django version of PyDice, with one die
   
 ** Future version will update djdice to roll multiple dice.
+
+Check this game out at: ginnypx1.github.io/PyDice
