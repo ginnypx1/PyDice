@@ -61,7 +61,7 @@ body {
 }
 h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 5em;
+    font-size: 4em;
 }
 /*COLORS___________________*/
 a:link,
@@ -97,6 +97,7 @@ h1 {
 button {
     background-color: white;
     color: #730099; /* purple */
+    border-radius: 15px;
 }
 footer,
 .navbar-right {
@@ -106,7 +107,6 @@ footer,
 .directions,
 .diceroll {
     height: 100%;
-    min-height: 750px;
     padding: 15px;
 }
 form {
@@ -114,8 +114,7 @@ form {
 }
 button {
     margin-top: 15px;
-    margin-left: 45%;
-    padding: 10px;
+    margin-left: 56%;
     width: 200px;
 }
 label,

@@ -1,7 +1,9 @@
 $(document).ready(function() {
-   $(function() {
-        $('.directions').matchHeight({
-            target: $('.diceroll')
+    if (document.documentElement.clientWidth > 768) {
+        $(function() {
+            $('.directions').matchHeight({
+                target: $('.diceroll')
+            });
         });
-    });
+    }
 });

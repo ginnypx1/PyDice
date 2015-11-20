@@ -4,6 +4,12 @@
 	/*body {
 		background-color: red;
 	}*/
+	button {
+		margin-left: 45%;
+	}
+	h1 {
+		font-size: 3em;
+	}
 }
 
 /*iPHONES6 to GALAXY*/
@@ -11,13 +17,23 @@
 	/*body {
 		background-color: orange;
 	}*/
+	button {
+		margin-left: 45%;
+	}
+	h1 {
+		font-size: 3em;
+	}
 }
 
 /*TABLETS*/
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) {
 	/*body {
 		background-color: yellow;
 	}*/
+	.diceroll,
+	.directions {
+		min-height: 750px;
+	}
 }
 
 /*PRINT*/
