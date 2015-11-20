@@ -14,6 +14,9 @@
 	.diceroll {
 		min-height: 500px;
 	}
+	button {
+		font-size: 0.75em;
+	}
 }
 
 /*iPHONES6 to GALAXY*/
@@ -30,6 +33,9 @@
 	.directions,
 	.diceroll {
 		min-height: 500px;
+	}
+	button {
+		font-size: 0.75em;
 	}
 }
 
