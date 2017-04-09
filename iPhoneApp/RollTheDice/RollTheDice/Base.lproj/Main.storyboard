@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,14 +34,20 @@
                                     <action selector="tapToRoll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="btc-yf-n3X"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7GX-B5-aQs">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7GX-B5-aQs">
                                 <rect key="frame" x="37.5" y="166.5" width="300" height="333.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="dQa-5p-cNS">
                                         <rect key="frame" x="0.0" y="92" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="dQa-5p-cNS" secondAttribute="height" multiplier="1:1" id="dyf-Dd-rMO"/>
+                                        </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice2" translatesAutoresizingMaskIntoConstraints="NO" id="omT-Yf-p1w">
                                         <rect key="frame" x="150" y="92" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="omT-Yf-p1w" secondAttribute="height" multiplier="1:1" id="jGV-t5-QB4"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                             </stackView>
