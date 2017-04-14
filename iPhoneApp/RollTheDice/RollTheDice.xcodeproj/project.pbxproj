@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		341D97F11EA150FF001F9965 /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341D97F01EA150FF001F9965 /* Dice.swift */; };
+		341D97F31EA1511C001F9965 /* RollTheDiceModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341D97F21EA1511C001F9965 /* RollTheDiceModelTests.swift */; };
+		341D97F51EA15962001F9965 /* DiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341D97F41EA15962001F9965 /* DiceViewModel.swift */; };
+		341D97F71EA15A59001F9965 /* RollTheDiceViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341D97F61EA15A59001F9965 /* RollTheDiceViewModelTests.swift */; };
+		341D97F91EA15F96001F9965 /* RollTheDiceViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341D97F81EA15F96001F9965 /* RollTheDiceViewControllerTests.swift */; };
 		346A19371E97FF55003F3683 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A19361E97FF55003F3683 /* AppDelegate.swift */; };
-		346A19391E97FF55003F3683 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A19381E97FF55003F3683 /* ViewController.swift */; };
+		346A19391E97FF55003F3683 /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A19381E97FF55003F3683 /* DiceViewController.swift */; };
 		346A193C1E97FF56003F3683 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346A193A1E97FF56003F3683 /* Main.storyboard */; };
 		346A193E1E97FF56003F3683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 346A193D1E97FF56003F3683 /* Assets.xcassets */; };
 		346A19411E97FF56003F3683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346A193F1E97FF56003F3683 /* LaunchScreen.storyboard */; };
-		346A194C1E97FF56003F3683 /* RollTheDiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A194B1E97FF56003F3683 /* RollTheDiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		341D98031EA16964001F9965 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 346A192B1E97FF55003F3683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 346A19321E97FF55003F3683;
+			remoteInfo = RollTheDice;
+		};
 		346A19481E97FF56003F3683 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 346A192B1E97FF55003F3683 /* Project object */;
@@ -26,19 +37,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		341D97F01EA150FF001F9965 /* Dice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
+		341D97F21EA1511C001F9965 /* RollTheDiceModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RollTheDiceModelTests.swift; sourceTree = "<group>"; };
+		341D97F41EA15962001F9965 /* DiceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiceViewModel.swift; sourceTree = "<group>"; };
+		341D97F61EA15A59001F9965 /* RollTheDiceViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RollTheDiceViewModelTests.swift; sourceTree = "<group>"; };
+		341D97F81EA15F96001F9965 /* RollTheDiceViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RollTheDiceViewControllerTests.swift; sourceTree = "<group>"; };
+		341D97FE1EA16962001F9965 /* RollTheDiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RollTheDiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		346A19331E97FF55003F3683 /* RollTheDice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RollTheDice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		346A19361E97FF55003F3683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		346A19381E97FF55003F3683 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		346A19381E97FF55003F3683 /* DiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
 		346A193B1E97FF56003F3683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		346A193D1E97FF56003F3683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		346A19401E97FF56003F3683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		346A19421E97FF56003F3683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		346A19471E97FF56003F3683 /* RollTheDiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RollTheDiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		346A194B1E97FF56003F3683 /* RollTheDiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollTheDiceTests.swift; sourceTree = "<group>"; };
 		346A194D1E97FF56003F3683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		341D97FB1EA16962001F9965 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		346A19301E97FF55003F3683 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -70,6 +93,7 @@
 			children = (
 				346A19331E97FF55003F3683 /* RollTheDice.app */,
 				346A19471E97FF56003F3683 /* RollTheDiceTests.xctest */,
+				341D97FE1EA16962001F9965 /* RollTheDiceUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,7 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				346A19361E97FF55003F3683 /* AppDelegate.swift */,
-				346A19381E97FF55003F3683 /* ViewController.swift */,
+				346A19381E97FF55003F3683 /* DiceViewController.swift */,
+				341D97F01EA150FF001F9965 /* Dice.swift */,
+				341D97F41EA15962001F9965 /* DiceViewModel.swift */,
 				346A193A1E97FF56003F3683 /* Main.storyboard */,
 				346A193D1E97FF56003F3683 /* Assets.xcassets */,
 				346A193F1E97FF56003F3683 /* LaunchScreen.storyboard */,
@@ -90,8 +116,10 @@
 		346A194A1E97FF56003F3683 /* RollTheDiceTests */ = {
 			isa = PBXGroup;
 			children = (
-				346A194B1E97FF56003F3683 /* RollTheDiceTests.swift */,
 				346A194D1E97FF56003F3683 /* Info.plist */,
+				341D97F21EA1511C001F9965 /* RollTheDiceModelTests.swift */,
+				341D97F61EA15A59001F9965 /* RollTheDiceViewModelTests.swift */,
+				341D97F81EA15F96001F9965 /* RollTheDiceViewControllerTests.swift */,
 			);
 			path = RollTheDiceTests;
 			sourceTree = "<group>";
@@ -99,6 +127,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		341D97FD1EA16962001F9965 /* RollTheDiceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 341D98051EA16965001F9965 /* Build configuration list for PBXNativeTarget "RollTheDiceUITests" */;
+			buildPhases = (
+				341D97FA1EA16962001F9965 /* Sources */,
+				341D97FB1EA16962001F9965 /* Frameworks */,
+				341D97FC1EA16962001F9965 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				341D98041EA16964001F9965 /* PBXTargetDependency */,
+			);
+			name = RollTheDiceUITests;
+			productName = RollTheDiceUITests;
+			productReference = 341D97FE1EA16962001F9965 /* RollTheDiceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		346A19321E97FF55003F3683 /* RollTheDice */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 346A19501E97FF56003F3683 /* Build configuration list for PBXNativeTarget "RollTheDice" */;
@@ -144,6 +190,12 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = GhostBirdGames;
 				TargetAttributes = {
+					341D97FD1EA16962001F9965 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = B875NM54ML;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 346A19321E97FF55003F3683;
+					};
 					346A19321E97FF55003F3683 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = B875NM54ML;
@@ -172,11 +224,19 @@
 			targets = (
 				346A19321E97FF55003F3683 /* RollTheDice */,
 				346A19461E97FF56003F3683 /* RollTheDiceTests */,
+				341D97FD1EA16962001F9965 /* RollTheDiceUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		341D97FC1EA16962001F9965 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		346A19311E97FF55003F3683 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,12 +257,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		341D97FA1EA16962001F9965 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		346A192F1E97FF55003F3683 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				346A19391E97FF55003F3683 /* ViewController.swift in Sources */,
+				346A19391E97FF55003F3683 /* DiceViewController.swift in Sources */,
+				341D97F11EA150FF001F9965 /* Dice.swift in Sources */,
 				346A19371E97FF55003F3683 /* AppDelegate.swift in Sources */,
+				341D97F51EA15962001F9965 /* DiceViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,13 +279,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				346A194C1E97FF56003F3683 /* RollTheDiceTests.swift in Sources */,
+				341D97F71EA15A59001F9965 /* RollTheDiceViewModelTests.swift in Sources */,
+				341D97F91EA15F96001F9965 /* RollTheDiceViewControllerTests.swift in Sources */,
+				341D97F31EA1511C001F9965 /* RollTheDiceModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		341D98041EA16964001F9965 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 346A19321E97FF55003F3683 /* RollTheDice */;
+			targetProxy = 341D98031EA16964001F9965 /* PBXContainerItemProxy */;
+		};
 		346A19491E97FF56003F3683 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 346A19321E97FF55003F3683 /* RollTheDice */;
@@ -244,6 +320,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		341D98061EA16965001F9965 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = B875NM54ML;
+				INFOPLIST_FILE = RollTheDiceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostbirdgames.RollTheDiceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RollTheDice;
+			};
+			name = Debug;
+		};
+		341D98071EA16965001F9965 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = B875NM54ML;
+				INFOPLIST_FILE = RollTheDiceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostbirdgames.RollTheDiceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RollTheDice;
+			};
+			name = Release;
+		};
 		346A194E1E97FF56003F3683 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -398,6 +500,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		341D98051EA16965001F9965 /* Build configuration list for PBXNativeTarget "RollTheDiceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				341D98061EA16965001F9965 /* Debug */,
+				341D98071EA16965001F9965 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		346A192E1E97FF55003F3683 /* Build configuration list for PBXProject "RollTheDice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -414,6 +524,7 @@
 				346A19521E97FF56003F3683 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		346A19531E97FF56003F3683 /* Build configuration list for PBXNativeTarget "RollTheDiceTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +533,7 @@
 				346A19551E97FF56003F3683 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

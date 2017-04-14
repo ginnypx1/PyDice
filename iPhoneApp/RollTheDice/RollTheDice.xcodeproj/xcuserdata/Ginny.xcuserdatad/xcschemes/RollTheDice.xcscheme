@@ -38,6 +38,16 @@
                ReferencedContainer = "container:RollTheDice.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "341D97FD1EA16962001F9965"
+               BuildableName = "RollTheDiceUITests.xctest"
+               BlueprintName = "RollTheDiceUITests"
+               ReferencedContainer = "container:RollTheDice.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
