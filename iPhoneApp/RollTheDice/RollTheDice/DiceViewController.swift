@@ -31,8 +31,13 @@ class DiceViewController: UIViewController {
     // MARK: - Game Action
     
     func diceRoll() {
-        // for each in dice:
+        // bounce dice
+        AnimationManager.bounceDiceUp(dice: dice[0])
+        AnimationManager.bounceDiceDown(dice: dice[1])
+        
+        // change dice value
         for die in dice {
+            // change image
             let newDice = DiceRoll()
             // assign the UIImage to the image view
             die.image = DiceView().convertRollToImage(die: newDice)
