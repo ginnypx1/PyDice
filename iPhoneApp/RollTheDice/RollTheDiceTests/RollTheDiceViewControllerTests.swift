@@ -64,6 +64,12 @@ class RollTheDiceViewControllerTests: XCTestCase {
         XCTAssertNotNil(sut.dice[1])
     }
     
+    func test_motionShake_SetsImageViews() {
+        sut.motionEnded(UIEventSubtype.motionShake, with: nil)
+        XCTAssertNotNil(sut.dice[0])
+        XCTAssertNotNil(sut.dice[1])
+    }
+    
     // TODO: TDD test motion shake calls diceRoll
     // TODO: How to test that animation performs
     

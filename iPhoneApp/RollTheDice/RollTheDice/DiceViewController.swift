@@ -23,14 +23,16 @@ class DiceViewController: UIViewController {
         diceRoll()
     }
     
-    // MARK: - Roll Dice
+    // MARK: - Roll Dice by Shake Gesture
     
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
-        if event!.subtype == UIEventSubtype.motionShake {
+        if motion == .motionShake {
             // print("motion shake detected")
             animatedDiceRoll()
         }
     }
+    
+    // MARK: - Roll Dice by Button Tap
 
     @IBAction func tapToRoll(_ sender: Any) {
         animatedDiceRoll()
