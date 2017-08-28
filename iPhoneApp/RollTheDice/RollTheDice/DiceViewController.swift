@@ -15,33 +15,46 @@ class DiceViewController: UIViewController {
     @IBOutlet var dice: [UIImageView]!
     @IBOutlet weak var rollDiceButton: UIButton!
     
-    // MARK: - Motion Detected
+    // MARK: - View
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        diceRoll()
+    }
+    
+    // MARK: - Roll Dice
     
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         if event!.subtype == UIEventSubtype.motionShake {
-            //print("motion shake detected")
-            diceRoll()
+            // print("motion shake detected")
+            animatedDiceRoll()
         }
     }
 
     @IBAction func tapToRoll(_ sender: Any) {
-        diceRoll()
+        animatedDiceRoll()
     }
     
-    // MARK: - Game Action
+    // MARK: - Display Dice Roll
     
     func diceRoll() {
+        // change dice value
+        for die in dice {
+            // roll the dice
+            let roll = DiceRoll()
+            // assign the dice image to the imageView
+            die.image = roll.rollImage
+        }
+    }
+    
+    func animatedDiceRoll() {
         // bounce dice
         AnimationManager.bounceDiceUp(dice: dice[0])
         AnimationManager.bounceDiceDown(dice: dice[1])
         
         // change dice value
-        for die in dice {
-            // change image
-            let newDice = DiceRoll()
-            // assign the UIImage to the image view
-            die.image = DiceView().convertRollToImage(die: newDice)
-        }
+        diceRoll()
     }
 
 }

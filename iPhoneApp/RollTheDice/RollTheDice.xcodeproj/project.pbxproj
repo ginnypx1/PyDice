@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		341D97F11EA150FF001F9965 /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341D97F01EA150FF001F9965 /* Dice.swift */; };
 		341D97F31EA1511C001F9965 /* RollTheDiceModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341D97F21EA1511C001F9965 /* RollTheDiceModelTests.swift */; };
-		341D97F51EA15962001F9965 /* DiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341D97F41EA15962001F9965 /* DiceViewModel.swift */; };
-		341D97F71EA15A59001F9965 /* RollTheDiceViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341D97F61EA15A59001F9965 /* RollTheDiceViewModelTests.swift */; };
 		341D97F91EA15F96001F9965 /* RollTheDiceViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341D97F81EA15F96001F9965 /* RollTheDiceViewControllerTests.swift */; };
 		346A19371E97FF55003F3683 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A19361E97FF55003F3683 /* AppDelegate.swift */; };
 		346A19391E97FF55003F3683 /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A19381E97FF55003F3683 /* DiceViewController.swift */; };
@@ -33,8 +31,6 @@
 /* Begin PBXFileReference section */
 		341D97F01EA150FF001F9965 /* Dice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
 		341D97F21EA1511C001F9965 /* RollTheDiceModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RollTheDiceModelTests.swift; sourceTree = "<group>"; };
-		341D97F41EA15962001F9965 /* DiceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiceViewModel.swift; sourceTree = "<group>"; };
-		341D97F61EA15A59001F9965 /* RollTheDiceViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RollTheDiceViewModelTests.swift; sourceTree = "<group>"; };
 		341D97F81EA15F96001F9965 /* RollTheDiceViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RollTheDiceViewControllerTests.swift; sourceTree = "<group>"; };
 		346A19331E97FF55003F3683 /* RollTheDice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RollTheDice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		346A19361E97FF55003F3683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,12 +85,9 @@
 			children = (
 				346A19361E97FF55003F3683 /* AppDelegate.swift */,
 				346A19381E97FF55003F3683 /* DiceViewController.swift */,
-				341D97F41EA15962001F9965 /* DiceViewModel.swift */,
-				341D97F01EA150FF001F9965 /* Dice.swift */,
-				34F926361EE9F75F00939351 /* AnimationManager.swift */,
-				346A193A1E97FF56003F3683 /* Main.storyboard */,
-				346A193D1E97FF56003F3683 /* Assets.xcassets */,
-				346A193F1E97FF56003F3683 /* LaunchScreen.storyboard */,
+				346A63211F5481CB00BEF434 /* Model */,
+				346A63221F5481D100BEF434 /* View */,
+				346A63231F5481EF00BEF434 /* Assets */,
 				346A19421E97FF56003F3683 /* Info.plist */,
 			);
 			path = RollTheDice;
@@ -105,10 +98,35 @@
 			children = (
 				346A194D1E97FF56003F3683 /* Info.plist */,
 				341D97F21EA1511C001F9965 /* RollTheDiceModelTests.swift */,
-				341D97F61EA15A59001F9965 /* RollTheDiceViewModelTests.swift */,
 				341D97F81EA15F96001F9965 /* RollTheDiceViewControllerTests.swift */,
 			);
 			path = RollTheDiceTests;
+			sourceTree = "<group>";
+		};
+		346A63211F5481CB00BEF434 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				341D97F01EA150FF001F9965 /* Dice.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		346A63221F5481D100BEF434 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34F926361EE9F75F00939351 /* AnimationManager.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		346A63231F5481EF00BEF434 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				346A193A1E97FF56003F3683 /* Main.storyboard */,
+				346A193D1E97FF56003F3683 /* Assets.xcassets */,
+				346A193F1E97FF56003F3683 /* LaunchScreen.storyboard */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,7 +239,6 @@
 				346A19391E97FF55003F3683 /* DiceViewController.swift in Sources */,
 				341D97F11EA150FF001F9965 /* Dice.swift in Sources */,
 				346A19371E97FF55003F3683 /* AppDelegate.swift in Sources */,
-				341D97F51EA15962001F9965 /* DiceViewModel.swift in Sources */,
 				34F926371EE9F75F00939351 /* AnimationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,7 +247,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				341D97F71EA15A59001F9965 /* RollTheDiceViewModelTests.swift in Sources */,
 				341D97F91EA15F96001F9965 /* RollTheDiceViewControllerTests.swift in Sources */,
 				341D97F31EA1511C001F9965 /* RollTheDiceModelTests.swift in Sources */,
 			);
@@ -383,7 +399,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ghostbirdgames.RollTheDice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -397,7 +413,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ghostbirdgames.RollTheDice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
