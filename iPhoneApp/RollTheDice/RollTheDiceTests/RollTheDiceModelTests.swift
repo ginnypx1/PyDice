@@ -27,7 +27,7 @@ class RollTheDiceModelTests: XCTestCase {
         super.tearDown()
     }
     
-    // MARK: Test properties
+    // MARK: - Test properties
     
     func test_Dice_HasRollImages() {
         let rollImages = sut.rollImages
@@ -53,7 +53,7 @@ class RollTheDiceModelTests: XCTestCase {
         XCTAssertNotNil(rollImage)
     }
     
-    // MARK: Test roll value will match dice roll values 1-6
+    // MARK: - Test roll value will match dice roll values 1-6
     
     func test_rollValue_AlwaysGreaterThanZero () {
         let roll = sut.rollValue

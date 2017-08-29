@@ -15,11 +15,19 @@
 		346A193C1E97FF56003F3683 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346A193A1E97FF56003F3683 /* Main.storyboard */; };
 		346A193E1E97FF56003F3683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 346A193D1E97FF56003F3683 /* Assets.xcassets */; };
 		346A19411E97FF56003F3683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346A193F1E97FF56003F3683 /* LaunchScreen.storyboard */; };
+		34DFF23A1F55D930002CC25F /* RollTheDiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DFF2391F55D930002CC25F /* RollTheDiceUITests.swift */; };
 		34F926371EE9F75F00939351 /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F926361EE9F75F00939351 /* AnimationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		346A19481E97FF56003F3683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 346A192B1E97FF55003F3683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 346A19321E97FF55003F3683;
+			remoteInfo = RollTheDice;
+		};
+		34DFF23C1F55D930002CC25F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 346A192B1E97FF55003F3683 /* Project object */;
 			proxyType = 1;
@@ -41,6 +49,9 @@
 		346A19421E97FF56003F3683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		346A19471E97FF56003F3683 /* RollTheDiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RollTheDiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		346A194D1E97FF56003F3683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34DFF2371F55D930002CC25F /* RollTheDiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RollTheDiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34DFF2391F55D930002CC25F /* RollTheDiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollTheDiceUITests.swift; sourceTree = "<group>"; };
+		34DFF23B1F55D930002CC25F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34F926361EE9F75F00939351 /* AnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +70,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		34DFF2341F55D930002CC25F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -67,6 +85,7 @@
 			children = (
 				346A19351E97FF55003F3683 /* RollTheDice */,
 				346A194A1E97FF56003F3683 /* RollTheDiceTests */,
+				34DFF2381F55D930002CC25F /* RollTheDiceUITests */,
 				346A19341E97FF55003F3683 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,6 +95,7 @@
 			children = (
 				346A19331E97FF55003F3683 /* RollTheDice.app */,
 				346A19471E97FF56003F3683 /* RollTheDiceTests.xctest */,
+				34DFF2371F55D930002CC25F /* RollTheDiceUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +149,15 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		34DFF2381F55D930002CC25F /* RollTheDiceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				34DFF2391F55D930002CC25F /* RollTheDiceUITests.swift */,
+				34DFF23B1F55D930002CC25F /* Info.plist */,
+			);
+			path = RollTheDiceUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,13 +196,31 @@
 			productReference = 346A19471E97FF56003F3683 /* RollTheDiceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		34DFF2361F55D930002CC25F /* RollTheDiceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34DFF23E1F55D930002CC25F /* Build configuration list for PBXNativeTarget "RollTheDiceUITests" */;
+			buildPhases = (
+				34DFF2331F55D930002CC25F /* Sources */,
+				34DFF2341F55D930002CC25F /* Frameworks */,
+				34DFF2351F55D930002CC25F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34DFF23D1F55D930002CC25F /* PBXTargetDependency */,
+			);
+			name = RollTheDiceUITests;
+			productName = RollTheDiceUITests;
+			productReference = 34DFF2371F55D930002CC25F /* RollTheDiceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		346A192B1E97FF55003F3683 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = GhostBirdGames;
 				TargetAttributes = {
@@ -187,6 +234,12 @@
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = B875NM54ML;
 						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 346A19321E97FF55003F3683;
+					};
+					34DFF2361F55D930002CC25F = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = B875NM54ML;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 346A19321E97FF55003F3683;
 					};
@@ -207,6 +260,7 @@
 			targets = (
 				346A19321E97FF55003F3683 /* RollTheDice */,
 				346A19461E97FF56003F3683 /* RollTheDiceTests */,
+				34DFF2361F55D930002CC25F /* RollTheDiceUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +277,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		346A19451E97FF56003F3683 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34DFF2351F55D930002CC25F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -252,6 +313,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		34DFF2331F55D930002CC25F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34DFF23A1F55D930002CC25F /* RollTheDiceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -259,6 +328,11 @@
 			isa = PBXTargetDependency;
 			target = 346A19321E97FF55003F3683 /* RollTheDice */;
 			targetProxy = 346A19481E97FF56003F3683 /* PBXContainerItemProxy */;
+		};
+		34DFF23D1F55D930002CC25F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 346A19321E97FF55003F3683 /* RollTheDice */;
+			targetProxy = 34DFF23C1F55D930002CC25F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -451,6 +525,46 @@
 			};
 			name = Release;
 		};
+		34DFF23F1F55D930002CC25F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B875NM54ML;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = RollTheDiceUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.virginiaPennekamp.RollTheDiceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RollTheDice;
+			};
+			name = Debug;
+		};
+		34DFF2401F55D930002CC25F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B875NM54ML;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = RollTheDiceUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.virginiaPennekamp.RollTheDiceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RollTheDice;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -477,6 +591,15 @@
 			buildConfigurations = (
 				346A19541E97FF56003F3683 /* Debug */,
 				346A19551E97FF56003F3683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34DFF23E1F55D930002CC25F /* Build configuration list for PBXNativeTarget "RollTheDiceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34DFF23F1F55D930002CC25F /* Debug */,
+				34DFF2401F55D930002CC25F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

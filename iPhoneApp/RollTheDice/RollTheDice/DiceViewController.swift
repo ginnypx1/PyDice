@@ -47,6 +47,9 @@ class DiceViewController: UIViewController {
             let roll = DiceRoll()
             // assign the dice image to the imageView
             die.image = roll.rollImage
+            // set accessibility value
+            let valueString = String(roll.rollValue + 1)
+            die.accessibilityValue = valueString
         }
     }
     
