@@ -2,7 +2,7 @@
 
 PyDice is a simple dice throwing simulation (initially developed in Python) developed as a coding exercise to practice in several different formats:
 
-* iPhoneApp/RollTheDice.xcodeproj runs an **iOS App** version of PyDice
+* iPhoneApp/RollTheDice.xcodeproj runs an **iPhone iPad & WatchKit** version of PyDice
 * http://ginnypx1.github.io/PyDice shows off a **JavaScript/HTML** web version of PyDice
 * pydice.py rolls a specified number of dice directly on the **command line**
 * tk_dice.py rolls a specified number of dice in a **Tkinter widget**
@@ -34,7 +34,7 @@ To check out PyDice on the web: http://ginnypx1.github.io/PyDice
   
 ## Instructions
 
-To roll the dice on the iPhone app, either shake your device or push the "Roll the Dice" button.
+To roll the dice on the iPhone/iPad app, either shake your device or push the "Roll the Dice" button. For the Apple Watch app, push the "Tap to Roll" button.
 
 For the command line, TKinter and web versions, enter the number of die you'd like to roll and press "Enter".
 
