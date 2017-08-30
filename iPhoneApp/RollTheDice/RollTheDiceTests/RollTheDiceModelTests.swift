@@ -36,10 +36,10 @@ class RollTheDiceModelTests: XCTestCase {
     
     func test_Dice_RollImages_HasProperContent() {
         let rollImages = sut.rollImages
-        let firstImage = rollImages[0]
+        let firstImage = UIImage(named: rollImages[0])
         let expectedImage = UIImage(named: "dice1")
         XCTAssertEqual(firstImage, expectedImage)
-        let expectedArray = [#imageLiteral(resourceName: "dice1"), #imageLiteral(resourceName: "dice2"), #imageLiteral(resourceName: "dice3"), #imageLiteral(resourceName: "dice4"), #imageLiteral(resourceName: "dice5"), #imageLiteral(resourceName: "dice6")]
+        let expectedArray = ["dice1", "dice2", "dice3", "dice4", "dice5", "dice6"]
         XCTAssertEqual(rollImages, expectedArray)
     }
     

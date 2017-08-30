@@ -15,7 +15,18 @@
 		346A193C1E97FF56003F3683 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346A193A1E97FF56003F3683 /* Main.storyboard */; };
 		346A193E1E97FF56003F3683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 346A193D1E97FF56003F3683 /* Assets.xcassets */; };
 		346A19411E97FF56003F3683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346A193F1E97FF56003F3683 /* LaunchScreen.storyboard */; };
+		347CC25C1F5754FF0012F21A /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341D97F01EA150FF001F9965 /* Dice.swift */; };
 		34DFF23A1F55D930002CC25F /* RollTheDiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DFF2391F55D930002CC25F /* RollTheDiceUITests.swift */; };
+		34E941501F574310005F448E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34E9414E1F574310005F448E /* Interface.storyboard */; };
+		34E941521F574310005F448E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34E941511F574310005F448E /* Assets.xcassets */; };
+		34E941591F574310005F448E /* RollTheWatchDice Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 34E941581F574310005F448E /* RollTheWatchDice Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		34E9415E1F574310005F448E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9415D1F574310005F448E /* InterfaceController.swift */; };
+		34E941601F574310005F448E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9415F1F574310005F448E /* ExtensionDelegate.swift */; };
+		34E941621F574310005F448E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E941611F574310005F448E /* NotificationController.swift */; };
+		34E941641F574310005F448E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34E941631F574310005F448E /* Assets.xcassets */; };
+		34E941691F574310005F448E /* RollTheWatchDice.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 34E9414C1F574310005F448E /* RollTheWatchDice.app */; };
+		34E941731F57435A005F448E /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341D97F01EA150FF001F9965 /* Dice.swift */; };
+		34E941741F57435B005F448E /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341D97F01EA150FF001F9965 /* Dice.swift */; };
 		34F926371EE9F75F00939351 /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F926361EE9F75F00939351 /* AnimationManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +45,46 @@
 			remoteGlobalIDString = 346A19321E97FF55003F3683;
 			remoteInfo = RollTheDice;
 		};
+		34E9415A1F574310005F448E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 346A192B1E97FF55003F3683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34E941571F574310005F448E;
+			remoteInfo = "RollTheWatchDice Extension";
+		};
+		34E941671F574310005F448E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 346A192B1E97FF55003F3683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34E9414B1F574310005F448E;
+			remoteInfo = RollTheWatchDice;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		34E9416F1F574310005F448E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				34E941591F574310005F448E /* RollTheWatchDice Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34E941711F574310005F448E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				34E941691F574310005F448E /* RollTheWatchDice.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		341D97F01EA150FF001F9965 /* Dice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
@@ -52,6 +102,17 @@
 		34DFF2371F55D930002CC25F /* RollTheDiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RollTheDiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34DFF2391F55D930002CC25F /* RollTheDiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollTheDiceUITests.swift; sourceTree = "<group>"; };
 		34DFF23B1F55D930002CC25F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34E9414C1F574310005F448E /* RollTheWatchDice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RollTheWatchDice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34E9414F1F574310005F448E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		34E941511F574310005F448E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34E941531F574310005F448E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34E941581F574310005F448E /* RollTheWatchDice Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RollTheWatchDice Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34E9415D1F574310005F448E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		34E9415F1F574310005F448E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		34E941611F574310005F448E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		34E941631F574310005F448E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34E941651F574310005F448E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34E941661F574310005F448E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		34F926361EE9F75F00939351 /* AnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,15 +138,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		34E941551F574310005F448E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		346A192A1E97FF55003F3683 = {
 			isa = PBXGroup;
 			children = (
+				341D97F01EA150FF001F9965 /* Dice.swift */,
 				346A19351E97FF55003F3683 /* RollTheDice */,
 				346A194A1E97FF56003F3683 /* RollTheDiceTests */,
 				34DFF2381F55D930002CC25F /* RollTheDiceUITests */,
+				34E9414D1F574310005F448E /* RollTheWatchDice */,
+				34E9415C1F574310005F448E /* RollTheWatchDice Extension */,
 				346A19341E97FF55003F3683 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,6 +167,8 @@
 				346A19331E97FF55003F3683 /* RollTheDice.app */,
 				346A19471E97FF56003F3683 /* RollTheDiceTests.xctest */,
 				34DFF2371F55D930002CC25F /* RollTheDiceUITests.xctest */,
+				34E9414C1F574310005F448E /* RollTheWatchDice.app */,
+				34E941581F574310005F448E /* RollTheWatchDice Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,7 +178,6 @@
 			children = (
 				346A19361E97FF55003F3683 /* AppDelegate.swift */,
 				346A19381E97FF55003F3683 /* DiceViewController.swift */,
-				346A63211F5481CB00BEF434 /* Model */,
 				346A63221F5481D100BEF434 /* View */,
 				346A63231F5481EF00BEF434 /* Assets */,
 				346A19421E97FF56003F3683 /* Info.plist */,
@@ -121,14 +193,6 @@
 				341D97F81EA15F96001F9965 /* RollTheDiceViewControllerTests.swift */,
 			);
 			path = RollTheDiceTests;
-			sourceTree = "<group>";
-		};
-		346A63211F5481CB00BEF434 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				341D97F01EA150FF001F9965 /* Dice.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		346A63221F5481D100BEF434 /* View */ = {
@@ -158,6 +222,29 @@
 			path = RollTheDiceUITests;
 			sourceTree = "<group>";
 		};
+		34E9414D1F574310005F448E /* RollTheWatchDice */ = {
+			isa = PBXGroup;
+			children = (
+				34E9414E1F574310005F448E /* Interface.storyboard */,
+				34E941511F574310005F448E /* Assets.xcassets */,
+				34E941531F574310005F448E /* Info.plist */,
+			);
+			path = RollTheWatchDice;
+			sourceTree = "<group>";
+		};
+		34E9415C1F574310005F448E /* RollTheWatchDice Extension */ = {
+			isa = PBXGroup;
+			children = (
+				34E9415F1F574310005F448E /* ExtensionDelegate.swift */,
+				34E9415D1F574310005F448E /* InterfaceController.swift */,
+				34E941611F574310005F448E /* NotificationController.swift */,
+				34E941631F574310005F448E /* Assets.xcassets */,
+				34E941651F574310005F448E /* Info.plist */,
+				34E941661F574310005F448E /* PushNotificationPayload.apns */,
+			);
+			path = "RollTheWatchDice Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,10 +255,12 @@
 				346A192F1E97FF55003F3683 /* Sources */,
 				346A19301E97FF55003F3683 /* Frameworks */,
 				346A19311E97FF55003F3683 /* Resources */,
+				34E941711F574310005F448E /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				34E941681F574310005F448E /* PBXTargetDependency */,
 			);
 			name = RollTheDice;
 			productName = RollTheDice;
@@ -214,6 +303,40 @@
 			productReference = 34DFF2371F55D930002CC25F /* RollTheDiceUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		34E9414B1F574310005F448E /* RollTheWatchDice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34E941701F574310005F448E /* Build configuration list for PBXNativeTarget "RollTheWatchDice" */;
+			buildPhases = (
+				34E9414A1F574310005F448E /* Resources */,
+				34E9416F1F574310005F448E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34E9415B1F574310005F448E /* PBXTargetDependency */,
+			);
+			name = RollTheWatchDice;
+			productName = RollTheWatchDice;
+			productReference = 34E9414C1F574310005F448E /* RollTheWatchDice.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		34E941571F574310005F448E /* RollTheWatchDice Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34E9416E1F574310005F448E /* Build configuration list for PBXNativeTarget "RollTheWatchDice Extension" */;
+			buildPhases = (
+				34E941541F574310005F448E /* Sources */,
+				34E941551F574310005F448E /* Frameworks */,
+				34E941561F574310005F448E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RollTheWatchDice Extension";
+			productName = "RollTheWatchDice Extension";
+			productReference = 34E941581F574310005F448E /* RollTheWatchDice Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -243,6 +366,17 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 346A19321E97FF55003F3683;
 					};
+					34E9414B1F574310005F448E = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = B875NM54ML;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					34E941571F574310005F448E = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = B875NM54ML;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 346A192E1E97FF55003F3683 /* Build configuration list for PBXProject "RollTheDice" */;
@@ -261,6 +395,8 @@
 				346A19321E97FF55003F3683 /* RollTheDice */,
 				346A19461E97FF56003F3683 /* RollTheDiceTests */,
 				34DFF2361F55D930002CC25F /* RollTheDiceUITests */,
+				34E9414B1F574310005F448E /* RollTheWatchDice */,
+				34E941571F574310005F448E /* RollTheWatchDice Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -290,6 +426,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		34E9414A1F574310005F448E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34E941521F574310005F448E /* Assets.xcassets in Resources */,
+				34E941501F574310005F448E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34E941561F574310005F448E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34E941641F574310005F448E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -309,6 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				341D97F91EA15F96001F9965 /* RollTheDiceViewControllerTests.swift in Sources */,
+				34E941731F57435A005F448E /* Dice.swift in Sources */,
 				341D97F31EA1511C001F9965 /* RollTheDiceModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,7 +471,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34E941741F57435B005F448E /* Dice.swift in Sources */,
 				34DFF23A1F55D930002CC25F /* RollTheDiceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34E941541F574310005F448E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34E941621F574310005F448E /* NotificationController.swift in Sources */,
+				34E941601F574310005F448E /* ExtensionDelegate.swift in Sources */,
+				347CC25C1F5754FF0012F21A /* Dice.swift in Sources */,
+				34E9415E1F574310005F448E /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +499,16 @@
 			isa = PBXTargetDependency;
 			target = 346A19321E97FF55003F3683 /* RollTheDice */;
 			targetProxy = 34DFF23C1F55D930002CC25F /* PBXContainerItemProxy */;
+		};
+		34E9415B1F574310005F448E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34E941571F574310005F448E /* RollTheWatchDice Extension */;
+			targetProxy = 34E9415A1F574310005F448E /* PBXContainerItemProxy */;
+		};
+		34E941681F574310005F448E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34E9414B1F574310005F448E /* RollTheWatchDice */;
+			targetProxy = 34E941671F574310005F448E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -351,6 +527,14 @@
 				346A19401E97FF56003F3683 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		34E9414E1F574310005F448E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34E9414F1F574310005F448E /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -565,6 +749,99 @@
 			};
 			name = Release;
 		};
+		34E9416A1F574310005F448E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B875NM54ML;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = RollTheWatchDice_Extension;
+				INFOPLIST_FILE = RollTheWatchDice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostbirdgames.RollTheDice.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RollTheWatchDice Extension/RollTheWatchDice-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		34E9416B1F574310005F448E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B875NM54ML;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = RollTheWatchDice_Extension;
+				INFOPLIST_FILE = RollTheWatchDice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostbirdgames.RollTheDice.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RollTheWatchDice Extension/RollTheWatchDice-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		34E9416C1F574310005F448E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B875NM54ML;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "RollTheWatchDice Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostbirdgames.RollTheDice.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		34E9416D1F574310005F448E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B875NM54ML;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "RollTheWatchDice Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostbirdgames.RollTheDice.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -600,6 +877,24 @@
 			buildConfigurations = (
 				34DFF23F1F55D930002CC25F /* Debug */,
 				34DFF2401F55D930002CC25F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34E9416E1F574310005F448E /* Build configuration list for PBXNativeTarget "RollTheWatchDice Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34E9416C1F574310005F448E /* Debug */,
+				34E9416D1F574310005F448E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34E941701F574310005F448E /* Build configuration list for PBXNativeTarget "RollTheWatchDice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34E9416A1F574310005F448E /* Debug */,
+				34E9416B1F574310005F448E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
