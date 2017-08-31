@@ -24,7 +24,7 @@
                                 </group>
                                 <group width="1" alignment="left" id="uJP-xr-ef0">
                                     <items>
-                                        <button width="1" alignment="center" verticalAlignment="center" accessibilityLabel="Tap To Roll Button" accessibilityHint="Tap To Roll" accessibilityIdentifier="TapToRollButton" title="Tap To Roll" id="b0z-pB-AWc">
+                                        <button width="1" alignment="center" verticalAlignment="center" accessibilityLabel="Tap To Roll Button" accessibilityHint="Tap To Roll" accessibilityIdentifier="TapToRollButton" title="Roll the Dice" id="b0z-pB-AWc">
                                             <color key="titleColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
                                                 <action selector="tapToRoll" destination="AgC-eL-Hgc" id="n4W-ZW-4Zu"/>
@@ -46,7 +46,7 @@
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
             <objects>
-                <notificationController id="YCC-NB-fut">
+                <notificationController contentMode="scaleAspectFit" id="YCC-NB-fut">
                     <items>
                         <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
                     </items>
