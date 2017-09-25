@@ -25,7 +25,6 @@ class RollTheDiceViewControllerTests: XCTestCase {
     }
     
     override func tearDown() {
-        
         super.tearDown()
     }
     
