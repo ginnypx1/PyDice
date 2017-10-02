@@ -13,8 +13,6 @@ class DiceRoll {
     
     // MARK: - Constant Properties
     
-    // let rollImages: [UIImage] = [#imageLiteral(resourceName: "dice1"), #imageLiteral(resourceName: "dice2"), #imageLiteral(resourceName: "dice3"), #imageLiteral(resourceName: "dice4"), #imageLiteral(resourceName: "dice5"), #imageLiteral(resourceName: "dice6")]
-    
     let rollImages = ["dice1", "dice2", "dice3", "dice4", "dice5", "dice6"]
     
     // MARK: - Variable Properties

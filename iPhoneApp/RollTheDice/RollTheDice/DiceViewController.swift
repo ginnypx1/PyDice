@@ -20,6 +20,8 @@ class DiceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        AccessibilityManager.applyDynamicText(to: rollDiceButton)
+                
         diceRoll()
     }
     
@@ -48,8 +50,7 @@ class DiceViewController: UIViewController {
             // assign the dice image to the imageView
             die.image = UIImage(named: roll.rollImage)
             // set accessibility value
-            let valueString = String(roll.rollValue + 1)
-            die.accessibilityValue = valueString
+            AccessibilityManager.applyAccessibility(toImage: die, forRoll: roll.rollValue)
         }
     }
     
@@ -61,6 +62,8 @@ class DiceViewController: UIViewController {
         // change dice value
         diceRoll()
     }
+    
+    
 
 }
 

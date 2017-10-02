@@ -27,6 +27,7 @@
 		34E941691F574310005F448E /* RollTheWatchDice.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 34E9414C1F574310005F448E /* RollTheWatchDice.app */; };
 		34E941731F57435A005F448E /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341D97F01EA150FF001F9965 /* Dice.swift */; };
 		34E941741F57435B005F448E /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341D97F01EA150FF001F9965 /* Dice.swift */; };
+		34F0CC0D1F82AB2100A5A9DF /* AccessibilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F0CC0C1F82AB2100A5A9DF /* AccessibilityManager.swift */; };
 		34F926371EE9F75F00939351 /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F926361EE9F75F00939351 /* AnimationManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +114,7 @@
 		34E941631F574310005F448E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34E941651F574310005F448E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34E941661F574310005F448E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		34F0CC0C1F82AB2100A5A9DF /* AccessibilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityManager.swift; sourceTree = "<group>"; };
 		34F926361EE9F75F00939351 /* AnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -198,6 +200,7 @@
 		346A63221F5481D100BEF434 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				34F0CC0C1F82AB2100A5A9DF /* AccessibilityManager.swift */,
 				34F926361EE9F75F00939351 /* AnimationManager.swift */,
 			);
 			path = View;
@@ -452,6 +455,7 @@
 			files = (
 				346A19391E97FF55003F3683 /* DiceViewController.swift in Sources */,
 				341D97F11EA150FF001F9965 /* Dice.swift in Sources */,
+				34F0CC0D1F82AB2100A5A9DF /* AccessibilityManager.swift in Sources */,
 				346A19371E97FF55003F3683 /* AppDelegate.swift in Sources */,
 				34F926371EE9F75F00939351 /* AnimationManager.swift in Sources */,
 			);
