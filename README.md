@@ -39,3 +39,9 @@ To roll the dice on the iPhone/iPad app, either shake your device or push the "R
 For the command line, TKinter and web versions, enter the number of die you'd like to roll and press "Enter".
 
 For the TKDice with Illustrations, simply hit the "Roll" button.
+
+## Technical Information
+
+The iOS version of "Roll the Dice" supports iPhone, iPad and iWatch.
+
+The iPhone/iPad app has both UI and Unit testing and supports Accessibility.
